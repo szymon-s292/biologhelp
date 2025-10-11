@@ -1,0 +1,28 @@
+.agroup__panels{
+  background-color: rgb(234, 234, 234);
+}
+
+.marked-answer {
+  background-color: #f2f1f1;
+  margin: 0;
+  padding: 16px 0;
+}
+
+.field--name-field-answer ul{
+  list-style-position: inside;
+}
+
+#stats {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+#counter {
+  font-size: x-large;
+}
+
+#print {
+
+}

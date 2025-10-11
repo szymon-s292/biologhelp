@@ -1,0 +1,2985 @@
+#autocomplete {
+    position: absolute;
+    z-index: 100;
+    overflow: hidden
+}
+
+#autocomplete ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    list-style-image: none
+}
+
+#autocomplete li {
+    cursor: default;
+    white-space: pre;
+    zoom: 1
+}
+
+html.js .form-autocomplete {
+    background-image: url(https://biologhelp.pl/sites/all/themes/omega/omega/images/misc/throbber.gif?1382488163);
+    background-position: 100% 2px;
+    background-repeat: no-repeat
+}
+
+html.js .throbbing {
+    background-position: 100% -18px
+}
+
+html.js fieldset.collapsed {
+    height: 1em
+}
+
+html.js fieldset.collapsed .fieldset-wrapper {
+    display: none
+}
+
+fieldset.collapsible {
+    position: relative
+}
+
+fieldset.collapsible .fieldset-legend {
+    display: block
+}
+
+.form-textarea-wrapper textarea {
+    display: block;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0
+}
+
+.resizable-textarea .grippie {
+    height: 9px;
+    background: #eee url(https://biologhelp.pl/sites/all/themes/omega/omega/images/misc/grippie.png?1382488163) no-repeat center 2px;
+    border: 1px solid #ddd;
+    border-top-width: 0;
+    cursor: s-resize;
+    overflow: hidden
+}
+
+body.drag {
+    cursor: move
+}
+
+.tabledrag-handle {
+    float: left;
+    overflow: hidden;
+    text-decoration: none;
+    cursor: move
+}
+
+.tabledrag-handle .handle {
+    height: 15px;
+    width: 15px;
+    margin: -.4em 0;
+    padding: .4em;
+    background: url(https://biologhelp.pl/sites/all/themes/omega/omega/images/misc/draggable.png?1382488163) no-repeat 6px 9px
+}
+
+.tabledrag-handle:hover {
+    text-decoration: none
+}
+
+.tabledrag-handle-hover .handle {
+    background-position: 6px -11px
+}
+
+.indentation {
+    float: left;
+    width: 20px
+}
+
+.tree-child {
+    background: url(https://biologhelp.pl/sites/all/themes/omega/omega/images/misc/tree.png?1382488163) no-repeat 12px center
+}
+
+.tree-child-last {
+    background: url(https://biologhelp.pl/sites/all/themes/omega/omega/images/misc/tree-bottom.png?1382488163) no-repeat 12px center
+}
+
+.tree-child-horizontal {
+    background: url(https://biologhelp.pl/sites/all/themes/omega/omega/images/misc/tree.png?1382488163) no-repeat -12px center
+}
+
+.tabledrag-toggle-weight-wrapper {
+    text-align: right
+}
+
+.sticky-header {
+    margin-top: 0;
+    background-color: #fff
+}
+
+.progress .bar {
+    background-color: #fff;
+    border: 1px solid
+}
+
+.progress .filled {
+    height: 1.5em;
+    width: 5px;
+    background-color: #000
+}
+
+.progress .percentage {
+    float: right
+}
+
+.ajax-progress {
+    display: inline-block
+}
+
+.ajax-progress .throbber {
+    float: left;
+    height: 15px;
+    width: 15px;
+    margin: 2px;
+    background: transparent url(https://biologhelp.pl/sites/all/themes/omega/omega/images/misc/throbber.gif?1382488163) no-repeat 0px -18px
+}
+
+.ajax-progress .message {
+    padding-left: 20px
+}
+
+tr .ajax-progress .throbber {
+    margin: 0 2px
+}
+
+.ajax-progress-bar {
+    width: 16em
+}
+
+.container-inline div,
+.container-inline label {
+    display: inline
+}
+
+.container-inline .fieldset-wrapper {
+    display: block
+}
+
+.nowrap {
+    white-space: nowrap
+}
+
+html.js .js-hide {
+    display: none
+}
+
+.element-hidden {
+    display: none
+}
+
+.element-invisible {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;
+    height: 1px
+}
+
+.element-invisible.element-focusable:active,
+.element-invisible.element-focusable:focus {
+    position: static !important;
+    clip: auto;
+    overflow: visible;
+    height: auto
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.menu {
+    border: none;
+    list-style: none;
+    text-align: left
+}
+
+.menu .expanded {
+    list-style-image: url(https://biologhelp.pl/sites/all/themes/omega/omega/images/misc/menu-expanded.png?1382488163);
+    list-style-type: circle
+}
+
+.menu .collapsed {
+    list-style-image: url(https://biologhelp.pl/sites/all/themes/omega/omega/images/misc/menu-collapsed.png?1382488163);
+    list-style-type: disc
+}
+
+.menu .leaf {
+    list-style-image: url(https://biologhelp.pl/sites/all/themes/omega/omega/images/misc/menu-leaf.png?1382488163);
+    list-style-type: square
+}
+
+.active {
+    color: #000
+}
+
+.menu-disabled {
+    background: #ccc
+}
+
+.links--inline {
+    zoom: 1;
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+
+.links--inline:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.links--inline li {
+    float: left;
+    margin-right: 1em
+}
+
+.links--inline li>a {
+    display: block
+}
+
+.tabs a {
+    background-color: #eee;
+    text-decoration: none
+}
+
+.tabs a.active {
+    background-color: #ccc
+}
+
+.tabs a:hover,
+.tabs a:focus {
+    background-color: #bbb
+}
+
+.tabs--primary {
+    margin-bottom: 1em;
+    border-bottom: 1px solid #bbb
+}
+
+.tabs--primary a {
+    padding: .3em .8em
+}
+
+.tabs--secondary a {
+    padding: .2em .5em;
+    margin: .4em 0;
+    font-size: .9em
+}
+
+.messages {
+    margin: 6px 0;
+    padding: 10px 10px 10px 50px;
+    background-position: 8px 8px;
+    background-repeat: no-repeat;
+    border: 1px solid
+}
+
+.messages ul {
+    margin: 0 0 0 1em;
+    padding: 0
+}
+
+.messages li {
+    list-style-image: none
+}
+
+.messages--status {
+    background-image: url(https://biologhelp.pl/sites/all/themes/omega/omega/images/misc/message-24-ok.png?1382488163);
+    border-color: #be7
+}
+
+.messages--status,
+tr.ok {
+    background-color: #f8fff0
+}
+
+.messages--status,
+.ok {
+    color: #234600
+}
+
+.messages--warning {
+    background-image: url(https://biologhelp.pl/sites/all/themes/omega/omega/images/misc/message-24-warning.png?1382488163);
+    border-color: #ed5
+}
+
+.messages--warning,
+tr.warning {
+    background-color: #fffce5
+}
+
+.messages--warning,
+.warning {
+    color: #333
+}
+
+.messages--error {
+    background-image: url(https://biologhelp.pl/sites/all/themes/omega/omega/images/misc/message-24-error.png?1382488163);
+    border-color: #ed541d
+}
+
+.messages--error,
+tr.error {
+    background-color: #fef5f1
+}
+
+.messages--error,
+.error {
+    color: #333
+}
+
+.error .error {
+    color: #8c2e0b
+}
+
+fieldset {
+    margin-bottom: 1em
+}
+
+table {
+    border-collapse: collapse
+}
+
+th {
+    padding-right: 1em;
+    background-color: #bbb;
+    text-align: left
+}
+
+tr.even,
+tr.odd {
+    background-color: #eee
+}
+
+tr.odd {
+    background-color: #ddd
+}
+
+#autocomplete {
+    background: #fff;
+    border: 1px solid;
+    color: #000
+}
+
+#autocomplete .selected {
+    background: #0072b9;
+    color: #fff
+}
+
+html.js fieldset.collapsible .fieldset-legend {
+    padding-left: 15px;
+    background: url(https://biologhelp.pl/sites/all/themes/omega/omega/images/misc/menu-expanded.png?1382488163) 5px 65% no-repeat
+}
+
+html.js fieldset.collapsed {
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-right-width: 0
+}
+
+html.js fieldset.collapsed .fieldset-legend {
+    background-image: url(https://biologhelp.pl/sites/all/themes/omega/omega/images/misc/menu-collapsed.png?1382488163);
+    background-position: 5px 50%
+}
+
+.fieldset-legend .summary {
+    margin-left: .5em;
+    color: #999;
+    font-size: .9em
+}
+
+.drag {
+    background-color: ivory
+}
+
+.drag-previous {
+    background-color: #ffd
+}
+
+.progress {
+    font-weight: 700
+}
+
+.progress .bar {
+    background: #ccc;
+    border-color: #666;
+    margin: 0 .2em;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px
+}
+
+.progress .filled {
+    background: #0072b9 url(https://biologhelp.pl/sites/all/themes/omega/omega/images/misc/progress.gif?1382488163)
+}
+
+.selected td {
+    background: #ffc
+}
+
+.checkbox,
+.checkbox {
+    text-align: center
+}
+
+.form-item,
+.form-actions {
+    margin-bottom: 1em
+}
+
+.form-item label,
+.form-actions label {
+    display: block;
+    font-weight: 700
+}
+
+.form-item .description,
+.form-actions .description {
+    font-size: .85em
+}
+
+.form-checkboxes .form-item,
+.form-radios .form-item {
+    margin-bottom: .4em
+}
+
+.form-checkboxes .description,
+.form-radios .description {
+    margin-left: 2.4em
+}
+
+label.option {
+    display: inline;
+    font-weight: 400
+}
+
+.form-checkbox,
+.form-radio {
+    vertical-align: middle
+}
+
+.marker,
+.form-required {
+    color: #f00
+}
+
+input.error,
+textarea.error,
+select.error {
+    border: 2px solid red
+}
+
+tr .form-item {
+    margin-top: 0;
+    margin-bottom: 0;
+    white-space: nowrap
+}
+
+.container-inline .form-actions,
+.container-inline.form-actions {
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+th.active img {
+    display: inline
+}
+
+td.active {
+    background-color: #ddd
+}
+
+.more-link {
+    display: block;
+    text-align: right
+}
+
+.pager {
+    clear: both;
+    padding: 0;
+    text-align: center
+}
+
+.pager__item {
+    display: inline;
+    padding: .5em;
+    background-image: none;
+    list-style-type: none
+}
+
+.pager__item--current {
+    font-weight: 700
+}
+
+.node-unpublished {
+    background-color: #fff4f4
+}
+
+.preview .node {
+    background-color: #ffffea
+}
+
+td.revision-current {
+    background: #ffc
+}
+
+.feed-source .feed-icon {
+    float: right;
+    display: block
+}
+
+.question-type-name {
+    font-style: italic
+}
+
+#quiz-progress {
+    font-style: italic;
+    font-size: 80%
+}
+
+#quiz-score-possible,
+#quiz-score-percent {
+    font-weight: 700
+}
+
+td.quiz-summary-qcell {
+    vertical-align: top;
+    padding: 1em 1em 0 0
+}
+
+td.quiz-summary-qcell table tr {
+    background: transparent
+}
+
+td.quiz-summary-qcell table td {
+    vertical-align: top;
+    padding: .5em
+}
+
+.quiz-answer-feedback {
+    font-style: italic
+}
+
+.feedback-icon {
+    display: inline
+}
+
+.add-questions {
+    background: transparent url(https://biologhelp.pl/sites/all/modules/quiz/images/add.png) no-repeat scroll 0% 10%;
+    padding: 0 0 1em 2em
+}
+
+.hidden-question {
+    display: none
+}
+
+.quiz-question-browser-row.odd {
+    background-color: #e7e7e7
+}
+
+.quiz-question-browser-row.even {
+    background-color: #fbfbfb
+}
+
+#quiz-question-browser-filters {
+    background: none repeat scroll 0 0 #e1e2dc;
+    border-color: #bebfb9;
+    border-style: solid;
+    border-width: 1px;
+    font-weight: 400;
+    padding: 3px 10px;
+    text-transform: uppercase
+}
+
+#quiz-question-browser-filters td.active {
+    background-color: #666
+}
+
+.quiz-question-browser-row.odd td.active {
+    background-color: #e2e2f9
+}
+
+.quiz-question-browser-row.even td.active {
+    background-color: #f8f8ff
+}
+
+tr.selected.quiz-question-browser-row td,
+tr.selected.quiz-question-browser-row td.active {
+    background: none repeat scroll 0 0 #505050;
+    color: #FFF
+}
+
+.browser-table th {
+    border-bottom: 0 solid #666
+}
+
+.q-staying {
+    display: inline;
+    float: left;
+    margin-right: 8px
+}
+
+div.quiz-report {
+    margin: 0;
+    padding: 0
+}
+
+div.quiz-report .dt {
+    background: #eee;
+    border-top: solid 1px gray;
+    padding-left: 5px
+}
+
+div.quiz-report .quiz-report-question-header h3 {
+    float: left
+}
+
+div.quiz-report .dt div.quiz-report-score-container {
+    border-right: solid 1px gray;
+    border-left: solid 1px gray;
+    border-bottom: solid 1px gray;
+    float: right;
+    padding: 4px 6px
+}
+
+div.quiz-report .dt div.quiz-report-score-container span div.form-item {
+    display: inline
+}
+
+div.quiz-score-submit {
+    float: right
+}
+
+.quiz-report-skipped {
+    float: right
+}
+
+.q-correct {
+    background-color: #dfd
+}
+
+.q-wrong {
+    background-color: #fcc
+}
+
+.q-waiting {
+    background-color: #ffd
+}
+
+input#edit-submit-hidden {
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    padding: 0;
+    border: none
+}
+
+.quiz-passed {
+    color: #0d0
+}
+
+.quiz-failed {
+    color: #d00
+}
+
+#no-questions {
+    font-style: italic
+}
+
+#quiz-view-table {
+    width: auto;
+    border-collapse: separate;
+    border: thin solid #555;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px
+}
+
+#quiz-start-quiz-button-form div {
+    padding: 0;
+    margin: 0
+}
+
+#quiz-start-quiz-button-form input {
+    margin: 0
+}
+
+#quiz-view-table td {
+    padding: 0 3px;
+    margin: 0;
+    line-height: 110%
+}
+
+#browser-pager .pager-last {
+    display: none
+}
+
+#browser-pager .pager-first {
+    display: none
+}
+
+.matching-tbl {
+    width: auto;
+    border-collapse: separate;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    line-height: 100%
+}
+
+.matching-tbl p,
+.matching-tbl select,
+.matching-tbl div {
+    padding: 0;
+    margin: 0;
+    line-height: 100%
+}
+
+.matching-tbl td {
+    padding: 2px;
+    margin: 2px;
+    line-height: 100%
+}
+
+.quiz-solution {
+    border-left: solid 5px #0f0;
+    padding-left: 3px
+}
+
+.quiz-answer-hidden {
+    font-style: italic
+}
+
+#quiz-jumper-form,
+#quiz-jumper-form div,
+#quiz-jumper-form select {
+    display: inline
+}
+
+#quiz-progress .item-list .pager {
+    text-align: left
+}
+
+#quiz-categorized-form #autocomplete {
+    overflow: auto;
+    max-height: 300px
+}
+
+.mark-doubtful .toggle {
+    margin: auto;
+    position: relative;
+    width: 100px;
+    overflow: hidden;
+    height: 18px;
+    line-height: 18px;
+    font-size: 11px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.50) inset;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.50) inset;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.50) inset
+}
+
+.mark-doubtful .toggle.off {
+    background-clip: padding-box;
+    background-image: -webkit-gradient(linear, 0% 0%, 100% 0%, color-stop(50%, red), color-stop(50%, white), color-stop(100%, white));
+    background-image: -moz-linear-gradient(left, red 50%, white 50%, white 100%);
+    background-image: linear-gradient(left, red 50%, white 50%, white 100%)
+}
+
+.mark-doubtful .toggle {
+    background-image: -webkit-gradient(linear, 0% 0%, 100% 0%, color-stop(50%, white), color-stop(50%, green), color-stop(100%, green));
+    background-image: -moz-linear-gradient(left, white 50%, green 50%, green 100%);
+    background-image: linear-gradient(left, white 50%, green 50%, green 100%)
+}
+
+.mark-doubtful .toggle div {
+    position: relative;
+    color: #777;
+    width: 52px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+    border-radius: 2px;
+    background: #fff;
+    text-shadow: 1px 1px 0 #fff;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #fefefe), color-stop(100%, #eaeaea));
+    background-image: -moz-linear-gradient(top, #fefefe 0%, #eaeaea 100%);
+    background-image: linear-gradient(top, #fefefe 0%, #eaeaea 100%);
+    -webkit-transition: left .2s;
+    -mox-transition: left .2s;
+    -o-transition: left .2s;
+    transition: left .2s
+}
+
+.mark-doubtful .toggle div:after,
+.mark-doubtful .toggle div:before {
+    color: #fff;
+    text-shadow: none;
+    width: 50px;
+    position: absolute;
+    top: 0;
+    font-size: 9px;
+    font-weight: 700
+}
+
+.mark-doubtful .toggle div:before {
+    content: "Doubtful";
+    left: -48px
+}
+
+.mark-doubtful .toggle div:after {
+    content: "Clear";
+    right: -48px
+}
+
+.mark-doubtful .toggle.off div {
+    left: 48px
+}
+
+.quiz-score-icon {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-size: cover
+}
+
+.quiz-score-icon.correct {
+    background-image: url(https://biologhelp.pl/sites/all/modules/quiz/images/check_008000_64.png)
+}
+
+.quiz-score-icon.incorrect {
+    background-image: url(https://biologhelp.pl/sites/all/modules/quiz/images/times_ff0000_64.png)
+}
+
+.quiz-score-icon.unknown {
+    background-image: url(https://biologhelp.pl/sites/all/modules/quiz/images/question_808080_64.png)
+}
+
+.quiz-score-icon.should {
+    background-image: url(https://biologhelp.pl/sites/all/modules/quiz/images/check_808080_64.png)
+}
+
+.quiz-score-icon.should-not {
+    background-image: url(https://biologhelp.pl/sites/all/modules/quiz/images/times_808080_64.png)
+}
+
+.quiz-score-icon.almost {
+    background-image: url(https://biologhelp.pl/sites/all/modules/quiz/images/check_ffff00_64.png)
+}
+
+.quiz-score-icon.selected {
+    background-image: url(https://biologhelp.pl/sites/all/modules/quiz/images/arrow-right_808080_64.png)
+}
+
+.quiz-score-icon.unselected {
+    background-image: url(https://biologhelp.pl/sites/all/modules/quiz/images/circle-o_808080_64.png)
+}
+
+.indented {
+    margin-left: 25px
+}
+
+.asyncform {
+    position: relative
+}
+
+.asyncform__msg {
+    display: none
+}
+
+.asyncform--submitted>*:not(.asyncform__msg) {
+    display: none !important
+}
+
+.asyncform--submitted>.asyncform__msg {
+    display: block
+}
+
+.asyncform--loading [type="submit"] {
+    color: transparent !important
+}
+
+.asyncform--loading [type="submit"]::after {
+    content: '';
+    position: absolute;
+    left: calc(50% - 10px);
+    top: calc(50% - 10px);
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: spin .6s linear infinite
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.asyncform__item {
+    display: block;
+    margin: 1rem 0
+}
+
+.asyncform__label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: .3em;
+    line-height: 1.3
+}
+
+.asyncform .field-website-bear {
+    display: none !important
+}
+
+.asyncform input[type="text"],
+.asyncform input[type="email"],
+.asyncform textarea,
+.asyncform select {
+    border: 2px solid #444;
+    border-radius: 3px;
+    padding: .5em .7em;
+    background: #fff;
+    transition: box-shadow .3s
+}
+
+.asyncform input[type="text"]:focus,
+.asyncform input[type="email"]:focus,
+.asyncform textarea:focus,
+.asyncform select:focus {
+    outline: none;
+    box-shadow: inset 0 0 0 1px #444
+}
+
+.asyncform textarea {
+    display: block;
+    width: 100%
+}
+
+.asyncform select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(45deg, transparent 50%, #444 50%), linear-gradient(135deg, #444 50%, transparent 50%);
+    background-position: right 16px top .85em, right 10px top .85em;
+    background-size: 6px 6px, 6px 6px;
+    padding: .2em 30px .2em .5em
+}
+
+.asyncform input[name="task"] {
+    width: 100%;
+    display: block
+}
+
+.asyncform input[name="email"] {
+    width: 320px;
+    max-width: 100%;
+    display: block
+}
+
+.field__label {
+    font-weight: 700
+}
+
+.field--label-inline .field__label,
+.field--label-inline .field__items {
+    float: left
+}
+
+.views-exposed-form .views-exposed-widget {
+    float: left;
+    padding: .5em 1em 0 0
+}
+
+.views-exposed-form .views-exposed-widget .form-submit {
+    margin-top: 1.6em
+}
+
+.views-exposed-form .form-item,
+.views-exposed-form .form-submit {
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+.views-exposed-form label {
+    font-weight: 700
+}
+
+.views-exposed-widgets {
+    margin-bottom: .5em
+}
+
+.views-align-left {
+    text-align: left
+}
+
+.views-align-right {
+    text-align: right
+}
+
+.views-align-center {
+    text-align: center
+}
+
+.views-view-grid tbody {
+    border-top: none
+}
+
+.view .progress-disabled {
+    float: none
+}
+
+.search-result__snippet {
+    padding-left: 1em
+}
+
+.search-result__info {
+    font-size: .85em
+}
+
+.search-advanced .criterion {
+    float: left;
+    margin-right: 2em
+}
+
+.search-advanced .action {
+    float: left;
+    clear: left
+}
+
+div.password-confirm {
+    visibility: hidden
+}
+
+.password-strength {
+    float: right;
+    margin-top: 1.2em;
+    width: 17em
+}
+
+.password-strength-title {
+    float: left
+}
+
+.password-strength-text {
+    float: right;
+    font-weight: 700
+}
+
+.password-indicator {
+    clear: both;
+    height: .3em;
+    width: 100%;
+    background-color: #c4c4c4
+}
+
+.password-indicator .indicator {
+    height: 100%;
+    width: 0;
+    background-color: #47c965
+}
+
+div.password-confirm {
+    float: right;
+    clear: both;
+    width: 17em;
+    margin-top: 1.5em
+}
+
+.form-type-password-confirm input {
+    width: 16em
+}
+
+.password-suggestions {
+    margin: .7em 0;
+    padding: .2em .5em;
+    border: 1px solid #b4b4b4
+}
+
+.user-profile-item__label {
+    font-weight: 700
+}
+
+.profile {
+    clear: both;
+    margin: 1em 0
+}
+
+.profile .user-picture {
+    float: right;
+    margin: 0 1em 1em 0
+}
+
+.profile h3 {
+    border-bottom: 1px solid #ccc
+}
+
+.profile dl {
+    margin: 0 0 1.5em
+}
+
+.profile dt {
+    margin: 0 0 .2em;
+    font-weight: 700
+}
+
+.profile dd {
+    margin: 0 0 1em
+}
+
+.ui-helper-hidden {
+    display: none
+}
+
+.ui-helper-hidden-accessible {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px
+}
+
+.ui-helper-reset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    line-height: 1.3;
+    text-decoration: none;
+    font-size: 100%;
+    list-style: none
+}
+
+.ui-helper-clearfix:before,
+.ui-helper-clearfix:after {
+    content: "";
+    display: table;
+    border-collapse: collapse
+}
+
+.ui-helper-clearfix:after {
+    clear: both
+}
+
+.ui-helper-clearfix {
+    min-height: 0
+}
+
+.ui-helper-zfix {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+    filter: Alpha(Opacity=0)
+}
+
+.ui-front {
+    z-index: 100
+}
+
+.ui-state-disabled {
+    cursor: default !important
+}
+
+.ui-icon {
+    display: block;
+    text-indent: -99999px;
+    overflow: hidden;
+    background-repeat: no-repeat
+}
+
+.ui-widget-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.ui-widget {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1.1em
+}
+
+.ui-widget .ui-widget {
+    font-size: 1em
+}
+
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1em
+}
+
+.ui-widget-content {
+    border: 1px solid #aaa;
+    background: #fff url(https://biologhelp.pl/sites/all/modules/jquery_update/replace/ui/themes/base/minified/images/ui-bg_flat_75_ffffff_40x100.png) 50% 50% repeat-x;
+    color: #222
+}
+
+.ui-widget-content a {
+    color: #222
+}
+
+.ui-widget-header {
+    border: 1px solid #aaa;
+    background: #ccc url(https://biologhelp.pl/sites/all/modules/jquery_update/replace/ui/themes/base/minified/images/ui-bg_highlight-soft_75_cccccc_1x100.png) 50% 50% repeat-x;
+    color: #222;
+    font-weight: 700
+}
+
+.ui-widget-header a {
+    color: #222
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+    border: 1px solid #d3d3d3;
+    background: #e6e6e6 url(https://biologhelp.pl/sites/all/modules/jquery_update/replace/ui/themes/base/minified/images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x;
+    font-weight: 400;
+    color: #555
+}
+
+.ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited {
+    color: #555;
+    text-decoration: none
+}
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+    border: 1px solid #999;
+    background: #dadada url(https://biologhelp.pl/sites/all/modules/jquery_update/replace/ui/themes/base/minified/images/ui-bg_glass_75_dadada_1x400.png) 50% 50% repeat-x;
+    font-weight: 400;
+    color: #212121
+}
+
+.ui-state-hover a,
+.ui-state-hover a:hover,
+.ui-state-hover a:link,
+.ui-state-hover a:visited {
+    color: #212121;
+    text-decoration: none
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+    border: 1px solid #aaa;
+    background: #fff url(https://biologhelp.pl/sites/all/modules/jquery_update/replace/ui/themes/base/minified/images/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x;
+    font-weight: 400;
+    color: #212121
+}
+
+.ui-state-active a,
+.ui-state-active a:link,
+.ui-state-active a:visited {
+    color: #212121;
+    text-decoration: none
+}
+
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+    border: 1px solid #fcefa1;
+    background: #fbf9ee url(https://biologhelp.pl/sites/all/modules/jquery_update/replace/ui/themes/base/minified/images/ui-bg_glass_55_fbf9ee_1x400.png) 50% 50% repeat-x;
+    color: #363636
+}
+
+.ui-state-highlight a,
+.ui-widget-content .ui-state-highlight a,
+.ui-widget-header .ui-state-highlight a {
+    color: #363636
+}
+
+.ui-state-error,
+.ui-widget-content .ui-state-error,
+.ui-widget-header .ui-state-error {
+    border: 1px solid #cd0a0a;
+    background: #fef1ec url(https://biologhelp.pl/sites/all/modules/jquery_update/replace/ui/themes/base/minified/images/ui-bg_glass_95_fef1ec_1x400.png) 50% 50% repeat-x;
+    color: #cd0a0a
+}
+
+.ui-state-error a,
+.ui-widget-content .ui-state-error a,
+.ui-widget-header .ui-state-error a {
+    color: #cd0a0a
+}
+
+.ui-state-error-text,
+.ui-widget-content .ui-state-error-text,
+.ui-widget-header .ui-state-error-text {
+    color: #cd0a0a
+}
+
+.ui-priority-primary,
+.ui-widget-content .ui-priority-primary,
+.ui-widget-header .ui-priority-primary {
+    font-weight: 700
+}
+
+.ui-priority-secondary,
+.ui-widget-content .ui-priority-secondary,
+.ui-widget-header .ui-priority-secondary {
+    opacity: .7;
+    filter: Alpha(Opacity=70);
+    font-weight: 400
+}
+
+.ui-state-disabled,
+.ui-widget-content .ui-state-disabled,
+.ui-widget-header .ui-state-disabled {
+    opacity: .35;
+    filter: Alpha(Opacity=35);
+    background-image: none
+}
+
+.ui-state-disabled .ui-icon {
+    filter: Alpha(Opacity=35)
+}
+
+.ui-icon {
+    width: 16px;
+    height: 16px
+}
+
+.ui-icon,
+.ui-widget-content .ui-icon {
+    background-image: url(https://biologhelp.pl/sites/all/modules/jquery_update/replace/ui/themes/base/minified/images/ui-icons_222222_256x240.png)
+}
+
+.ui-widget-header .ui-icon {
+    background-image: url(https://biologhelp.pl/sites/all/modules/jquery_update/replace/ui/themes/base/minified/images/ui-icons_222222_256x240.png)
+}
+
+.ui-state-default .ui-icon {
+    background-image: url(https://biologhelp.pl/sites/all/modules/jquery_update/replace/ui/themes/base/minified/images/ui-icons_888888_256x240.png)
+}
+
+.ui-state-hover .ui-icon,
+.ui-state-focus .ui-icon {
+    background-image: url(https://biologhelp.pl/sites/all/modules/jquery_update/replace/ui/themes/base/minified/images/ui-icons_454545_256x240.png)
+}
+
+.ui-state-active .ui-icon {
+    background-image: url(https://biologhelp.pl/sites/all/modules/jquery_update/replace/ui/themes/base/minified/images/ui-icons_454545_256x240.png)
+}
+
+.ui-state-highlight .ui-icon {
+    background-image: url(https://biologhelp.pl/sites/all/modules/jquery_update/replace/ui/themes/base/minified/images/ui-icons_2e83ff_256x240.png)
+}
+
+.ui-state-error .ui-icon,
+.ui-state-error-text .ui-icon {
+    background-image: url(https://biologhelp.pl/sites/all/modules/jquery_update/replace/ui/themes/base/minified/images/ui-icons_cd0a0a_256x240.png)
+}
+
+.ui-icon-blank {
+    background-position: 16px 16px
+}
+
+.ui-icon-carat-1-n {
+    background-position: 0 0
+}
+
+.ui-icon-carat-1-ne {
+    background-position: -16px 0
+}
+
+.ui-icon-carat-1-e {
+    background-position: -32px 0
+}
+
+.ui-icon-carat-1-se {
+    background-position: -48px 0
+}
+
+.ui-icon-carat-1-s {
+    background-position: -64px 0
+}
+
+.ui-icon-carat-1-sw {
+    background-position: -80px 0
+}
+
+.ui-icon-carat-1-w {
+    background-position: -96px 0
+}
+
+.ui-icon-carat-1-nw {
+    background-position: -112px 0
+}
+
+.ui-icon-carat-2-n-s {
+    background-position: -128px 0
+}
+
+.ui-icon-carat-2-e-w {
+    background-position: -144px 0
+}
+
+.ui-icon-triangle-1-n {
+    background-position: 0 -16px
+}
+
+.ui-icon-triangle-1-ne {
+    background-position: -16px -16px
+}
+
+.ui-icon-triangle-1-e {
+    background-position: -32px -16px
+}
+
+.ui-icon-triangle-1-se {
+    background-position: -48px -16px
+}
+
+.ui-icon-triangle-1-s {
+    background-position: -64px -16px
+}
+
+.ui-icon-triangle-1-sw {
+    background-position: -80px -16px
+}
+
+.ui-icon-triangle-1-w {
+    background-position: -96px -16px
+}
+
+.ui-icon-triangle-1-nw {
+    background-position: -112px -16px
+}
+
+.ui-icon-triangle-2-n-s {
+    background-position: -128px -16px
+}
+
+.ui-icon-triangle-2-e-w {
+    background-position: -144px -16px
+}
+
+.ui-icon-arrow-1-n {
+    background-position: 0 -32px
+}
+
+.ui-icon-arrow-1-ne {
+    background-position: -16px -32px
+}
+
+.ui-icon-arrow-1-e {
+    background-position: -32px -32px
+}
+
+.ui-icon-arrow-1-se {
+    background-position: -48px -32px
+}
+
+.ui-icon-arrow-1-s {
+    background-position: -64px -32px
+}
+
+.ui-icon-arrow-1-sw {
+    background-position: -80px -32px
+}
+
+.ui-icon-arrow-1-w {
+    background-position: -96px -32px
+}
+
+.ui-icon-arrow-1-nw {
+    background-position: -112px -32px
+}
+
+.ui-icon-arrow-2-n-s {
+    background-position: -128px -32px
+}
+
+.ui-icon-arrow-2-ne-sw {
+    background-position: -144px -32px
+}
+
+.ui-icon-arrow-2-e-w {
+    background-position: -160px -32px
+}
+
+.ui-icon-arrow-2-se-nw {
+    background-position: -176px -32px
+}
+
+.ui-icon-arrowstop-1-n {
+    background-position: -192px -32px
+}
+
+.ui-icon-arrowstop-1-e {
+    background-position: -208px -32px
+}
+
+.ui-icon-arrowstop-1-s {
+    background-position: -224px -32px
+}
+
+.ui-icon-arrowstop-1-w {
+    background-position: -240px -32px
+}
+
+.ui-icon-arrowthick-1-n {
+    background-position: 0 -48px
+}
+
+.ui-icon-arrowthick-1-ne {
+    background-position: -16px -48px
+}
+
+.ui-icon-arrowthick-1-e {
+    background-position: -32px -48px
+}
+
+.ui-icon-arrowthick-1-se {
+    background-position: -48px -48px
+}
+
+.ui-icon-arrowthick-1-s {
+    background-position: -64px -48px
+}
+
+.ui-icon-arrowthick-1-sw {
+    background-position: -80px -48px
+}
+
+.ui-icon-arrowthick-1-w {
+    background-position: -96px -48px
+}
+
+.ui-icon-arrowthick-1-nw {
+    background-position: -112px -48px
+}
+
+.ui-icon-arrowthick-2-n-s {
+    background-position: -128px -48px
+}
+
+.ui-icon-arrowthick-2-ne-sw {
+    background-position: -144px -48px
+}
+
+.ui-icon-arrowthick-2-e-w {
+    background-position: -160px -48px
+}
+
+.ui-icon-arrowthick-2-se-nw {
+    background-position: -176px -48px
+}
+
+.ui-icon-arrowthickstop-1-n {
+    background-position: -192px -48px
+}
+
+.ui-icon-arrowthickstop-1-e {
+    background-position: -208px -48px
+}
+
+.ui-icon-arrowthickstop-1-s {
+    background-position: -224px -48px
+}
+
+.ui-icon-arrowthickstop-1-w {
+    background-position: -240px -48px
+}
+
+.ui-icon-arrowreturnthick-1-w {
+    background-position: 0 -64px
+}
+
+.ui-icon-arrowreturnthick-1-n {
+    background-position: -16px -64px
+}
+
+.ui-icon-arrowreturnthick-1-e {
+    background-position: -32px -64px
+}
+
+.ui-icon-arrowreturnthick-1-s {
+    background-position: -48px -64px
+}
+
+.ui-icon-arrowreturn-1-w {
+    background-position: -64px -64px
+}
+
+.ui-icon-arrowreturn-1-n {
+    background-position: -80px -64px
+}
+
+.ui-icon-arrowreturn-1-e {
+    background-position: -96px -64px
+}
+
+.ui-icon-arrowreturn-1-s {
+    background-position: -112px -64px
+}
+
+.ui-icon-arrowrefresh-1-w {
+    background-position: -128px -64px
+}
+
+.ui-icon-arrowrefresh-1-n {
+    background-position: -144px -64px
+}
+
+.ui-icon-arrowrefresh-1-e {
+    background-position: -160px -64px
+}
+
+.ui-icon-arrowrefresh-1-s {
+    background-position: -176px -64px
+}
+
+.ui-icon-arrow-4 {
+    background-position: 0 -80px
+}
+
+.ui-icon-arrow-4-diag {
+    background-position: -16px -80px
+}
+
+.ui-icon-extlink {
+    background-position: -32px -80px
+}
+
+.ui-icon-newwin {
+    background-position: -48px -80px
+}
+
+.ui-icon-refresh {
+    background-position: -64px -80px
+}
+
+.ui-icon-shuffle {
+    background-position: -80px -80px
+}
+
+.ui-icon-transfer-e-w {
+    background-position: -96px -80px
+}
+
+.ui-icon-transferthick-e-w {
+    background-position: -112px -80px
+}
+
+.ui-icon-folder-collapsed {
+    background-position: 0 -96px
+}
+
+.ui-icon-folder-open {
+    background-position: -16px -96px
+}
+
+.ui-icon-document {
+    background-position: -32px -96px
+}
+
+.ui-icon-document-b {
+    background-position: -48px -96px
+}
+
+.ui-icon-note {
+    background-position: -64px -96px
+}
+
+.ui-icon-mail-closed {
+    background-position: -80px -96px
+}
+
+.ui-icon-mail-open {
+    background-position: -96px -96px
+}
+
+.ui-icon-suitcase {
+    background-position: -112px -96px
+}
+
+.ui-icon-comment {
+    background-position: -128px -96px
+}
+
+.ui-icon-person {
+    background-position: -144px -96px
+}
+
+.ui-icon-print {
+    background-position: -160px -96px
+}
+
+.ui-icon-trash {
+    background-position: -176px -96px
+}
+
+.ui-icon-locked {
+    background-position: -192px -96px
+}
+
+.ui-icon-unlocked {
+    background-position: -208px -96px
+}
+
+.ui-icon-bookmark {
+    background-position: -224px -96px
+}
+
+.ui-icon-tag {
+    background-position: -240px -96px
+}
+
+.ui-icon-home {
+    background-position: 0 -112px
+}
+
+.ui-icon-flag {
+    background-position: -16px -112px
+}
+
+.ui-icon-calendar {
+    background-position: -32px -112px
+}
+
+.ui-icon-cart {
+    background-position: -48px -112px
+}
+
+.ui-icon-pencil {
+    background-position: -64px -112px
+}
+
+.ui-icon-clock {
+    background-position: -80px -112px
+}
+
+.ui-icon-disk {
+    background-position: -96px -112px
+}
+
+.ui-icon-calculator {
+    background-position: -112px -112px
+}
+
+.ui-icon-zoomin {
+    background-position: -128px -112px
+}
+
+.ui-icon-zoomout {
+    background-position: -144px -112px
+}
+
+.ui-icon-search {
+    background-position: -160px -112px
+}
+
+.ui-icon-wrench {
+    background-position: -176px -112px
+}
+
+.ui-icon-gear {
+    background-position: -192px -112px
+}
+
+.ui-icon-heart {
+    background-position: -208px -112px
+}
+
+.ui-icon-star {
+    background-position: -224px -112px
+}
+
+.ui-icon-link {
+    background-position: -240px -112px
+}
+
+.ui-icon-cancel {
+    background-position: 0 -128px
+}
+
+.ui-icon-plus {
+    background-position: -16px -128px
+}
+
+.ui-icon-plusthick {
+    background-position: -32px -128px
+}
+
+.ui-icon-minus {
+    background-position: -48px -128px
+}
+
+.ui-icon-minusthick {
+    background-position: -64px -128px
+}
+
+.ui-icon-close {
+    background-position: -80px -128px
+}
+
+.ui-icon-closethick {
+    background-position: -96px -128px
+}
+
+.ui-icon-key {
+    background-position: -112px -128px
+}
+
+.ui-icon-lightbulb {
+    background-position: -128px -128px
+}
+
+.ui-icon-scissors {
+    background-position: -144px -128px
+}
+
+.ui-icon-clipboard {
+    background-position: -160px -128px
+}
+
+.ui-icon-copy {
+    background-position: -176px -128px
+}
+
+.ui-icon-contact {
+    background-position: -192px -128px
+}
+
+.ui-icon-image {
+    background-position: -208px -128px
+}
+
+.ui-icon-video {
+    background-position: -224px -128px
+}
+
+.ui-icon-script {
+    background-position: -240px -128px
+}
+
+.ui-icon-alert {
+    background-position: 0 -144px
+}
+
+.ui-icon-info {
+    background-position: -16px -144px
+}
+
+.ui-icon-notice {
+    background-position: -32px -144px
+}
+
+.ui-icon-help {
+    background-position: -48px -144px
+}
+
+.ui-icon-check {
+    background-position: -64px -144px
+}
+
+.ui-icon-bullet {
+    background-position: -80px -144px
+}
+
+.ui-icon-radio-on {
+    background-position: -96px -144px
+}
+
+.ui-icon-radio-off {
+    background-position: -112px -144px
+}
+
+.ui-icon-pin-w {
+    background-position: -128px -144px
+}
+
+.ui-icon-pin-s {
+    background-position: -144px -144px
+}
+
+.ui-icon-play {
+    background-position: 0 -160px
+}
+
+.ui-icon-pause {
+    background-position: -16px -160px
+}
+
+.ui-icon-seek-next {
+    background-position: -32px -160px
+}
+
+.ui-icon-seek-prev {
+    background-position: -48px -160px
+}
+
+.ui-icon-seek-end {
+    background-position: -64px -160px
+}
+
+.ui-icon-seek-start {
+    background-position: -80px -160px
+}
+
+.ui-icon-seek-first {
+    background-position: -80px -160px
+}
+
+.ui-icon-stop {
+    background-position: -96px -160px
+}
+
+.ui-icon-eject {
+    background-position: -112px -160px
+}
+
+.ui-icon-volume-off {
+    background-position: -128px -160px
+}
+
+.ui-icon-volume-on {
+    background-position: -144px -160px
+}
+
+.ui-icon-power {
+    background-position: 0 -176px
+}
+
+.ui-icon-signal-diag {
+    background-position: -16px -176px
+}
+
+.ui-icon-signal {
+    background-position: -32px -176px
+}
+
+.ui-icon-battery-0 {
+    background-position: -48px -176px
+}
+
+.ui-icon-battery-1 {
+    background-position: -64px -176px
+}
+
+.ui-icon-battery-2 {
+    background-position: -80px -176px
+}
+
+.ui-icon-battery-3 {
+    background-position: -96px -176px
+}
+
+.ui-icon-circle-plus {
+    background-position: 0 -192px
+}
+
+.ui-icon-circle-minus {
+    background-position: -16px -192px
+}
+
+.ui-icon-circle-close {
+    background-position: -32px -192px
+}
+
+.ui-icon-circle-triangle-e {
+    background-position: -48px -192px
+}
+
+.ui-icon-circle-triangle-s {
+    background-position: -64px -192px
+}
+
+.ui-icon-circle-triangle-w {
+    background-position: -80px -192px
+}
+
+.ui-icon-circle-triangle-n {
+    background-position: -96px -192px
+}
+
+.ui-icon-circle-arrow-e {
+    background-position: -112px -192px
+}
+
+.ui-icon-circle-arrow-s {
+    background-position: -128px -192px
+}
+
+.ui-icon-circle-arrow-w {
+    background-position: -144px -192px
+}
+
+.ui-icon-circle-arrow-n {
+    background-position: -160px -192px
+}
+
+.ui-icon-circle-zoomin {
+    background-position: -176px -192px
+}
+
+.ui-icon-circle-zoomout {
+    background-position: -192px -192px
+}
+
+.ui-icon-circle-check {
+    background-position: -208px -192px
+}
+
+.ui-icon-circlesmall-plus {
+    background-position: 0 -208px
+}
+
+.ui-icon-circlesmall-minus {
+    background-position: -16px -208px
+}
+
+.ui-icon-circlesmall-close {
+    background-position: -32px -208px
+}
+
+.ui-icon-squaresmall-plus {
+    background-position: -48px -208px
+}
+
+.ui-icon-squaresmall-minus {
+    background-position: -64px -208px
+}
+
+.ui-icon-squaresmall-close {
+    background-position: -80px -208px
+}
+
+.ui-icon-grip-dotted-vertical {
+    background-position: 0 -224px
+}
+
+.ui-icon-grip-dotted-horizontal {
+    background-position: -16px -224px
+}
+
+.ui-icon-grip-solid-vertical {
+    background-position: -32px -224px
+}
+
+.ui-icon-grip-solid-horizontal {
+    background-position: -48px -224px
+}
+
+.ui-icon-gripsmall-diagonal-se {
+    background-position: -64px -224px
+}
+
+.ui-icon-grip-diagonal-se {
+    background-position: -80px -224px
+}
+
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-left,
+.ui-corner-tl {
+    border-top-left-radius: 4px
+}
+
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-right,
+.ui-corner-tr {
+    border-top-right-radius: 4px
+}
+
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-left,
+.ui-corner-bl {
+    border-bottom-left-radius: 4px
+}
+
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-right,
+.ui-corner-br {
+    border-bottom-right-radius: 4px
+}
+
+.ui-widget-overlay {
+    background: #aaa url(https://biologhelp.pl/sites/all/modules/jquery_update/replace/ui/themes/base/minified/images/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x;
+    opacity: .3;
+    filter: Alpha(Opacity=30)
+}
+
+.ui-widget-shadow {
+    margin: -8px 0 0 -8px;
+    padding: 8px;
+    background: #aaa url(https://biologhelp.pl/sites/all/modules/jquery_update/replace/ui/themes/base/minified/images/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x;
+    opacity: .3;
+    filter: Alpha(Opacity=30);
+    border-radius: 8px
+}
+
+.ui-menu {
+    list-style: none;
+    padding: 2px;
+    margin: 0;
+    display: block;
+    outline: 0
+}
+
+.ui-menu .ui-menu {
+    margin-top: -3px;
+    position: absolute
+}
+
+.ui-menu .ui-menu-item {
+    margin: 0;
+    padding: 0;
+    width: 100%
+}
+
+.ui-menu .ui-menu-divider {
+    margin: 5px -2px;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    border-width: 1px 0 0
+}
+
+.ui-menu .ui-menu-item a {
+    text-decoration: none;
+    display: block;
+    padding: 2px .4em;
+    line-height: 1.5;
+    min-height: 0;
+    font-weight: 400
+}
+
+.ui-menu .ui-menu-item a.ui-state-focus,
+.ui-menu .ui-menu-item a.ui-state-active {
+    font-weight: 400;
+    margin: -1px
+}
+
+.ui-menu .ui-state-disabled {
+    font-weight: 400;
+    margin: .4em 0 .2em;
+    line-height: 1.5
+}
+
+.ui-menu .ui-state-disabled a {
+    cursor: default
+}
+
+.ui-menu-icons {
+    position: relative
+}
+
+.ui-menu-icons .ui-menu-item a {
+    position: relative;
+    padding-left: 2em
+}
+
+.ui-menu .ui-icon {
+    position: absolute;
+    top: .2em;
+    left: .2em
+}
+
+.ui-menu .ui-menu-icon {
+    position: static;
+    float: right
+}
+
+.ui-autocomplete {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: default
+}
+
+.ctools-locked {
+    color: red;
+    border: 1px solid red;
+    padding: 1em
+}
+
+.ctools-owns-lock {
+    background: #ffd none repeat scroll 0 0;
+    border: 1px solid #f0c020;
+    padding: 1em
+}
+
+a.ctools-ajaxing,
+input.ctools-ajaxing,
+button.ctools-ajaxing,
+select.ctools-ajaxing {
+    padding-right: 18px !important;
+    background: url(https://biologhelp.pl/sites/all/modules/ctools/images/status-active.gif) right center no-repeat
+}
+
+div.ctools-ajaxing {
+    float: left;
+    width: 18px;
+    background: url(https://biologhelp.pl/sites/all/modules/ctools/images/status-active.gif) center center no-repeat
+}
+
+.codeblock.xbbcode {
+    padding: 5px;
+    padding-top: 0;
+    border: 1px solid #CCC;
+    background-color: #EEE;
+    white-space: pre;
+    font-family: monospace
+}
+
+blockquote.xbbcode {
+    padding-left: 10px;
+    border-left: 3px solid #74b4c7
+}
+
+.pswp {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    -ms-touch-action: none;
+    touch-action: none;
+    z-index: 1500;
+    -webkit-text-size-adjust: 100%;
+    -webkit-backface-visibility: hidden;
+    outline: none
+}
+
+.pswp * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.pswp img {
+    max-width: none
+}
+
+.pswp--animate_opacity {
+    opacity: .001;
+    will-change: opacity;
+    -webkit-transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
+    transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1)
+}
+
+.pswp--open {
+    display: block
+}
+
+.pswp--zoom-allowed .pswp__img {
+    cursor: -webkit-zoom-in;
+    cursor: -moz-zoom-in;
+    cursor: zoom-in
+}
+
+.pswp--zoomed-in .pswp__img {
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    cursor: grab
+}
+
+.pswp--dragging .pswp__img {
+    cursor: -webkit-grabbing;
+    cursor: -moz-grabbing;
+    cursor: grabbing
+}
+
+.pswp__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    will-change: opacity
+}
+
+.pswp__scroll-wrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+}
+
+.pswp__container,
+.pswp__zoom-wrap {
+    -ms-touch-action: none;
+    touch-action: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0
+}
+
+.pswp__container,
+.pswp__img {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none
+}
+
+.pswp__zoom-wrap {
+    position: absolute;
+    width: 100%;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    -webkit-transition: -webkit-transform 333ms cubic-bezier(0.4, 0, 0.22, 1);
+    transition: transform 333ms cubic-bezier(0.4, 0, 0.22, 1)
+}
+
+.pswp__bg {
+    will-change: opacity;
+    -webkit-transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
+    transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1)
+}
+
+.pswp--animated-in .pswp__bg,
+.pswp--animated-in .pswp__zoom-wrap {
+    -webkit-transition: none;
+    transition: none
+}
+
+.pswp__container,
+.pswp__zoom-wrap {
+    -webkit-backface-visibility: hidden
+}
+
+.pswp__item {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden
+}
+
+.pswp__img {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 0;
+    left: 0
+}
+
+.pswp__img--placeholder {
+    -webkit-backface-visibility: hidden
+}
+
+.pswp__img--placeholder--blank {
+    background: #222
+}
+
+.pswp--ie .pswp__img {
+    width: 100% !important;
+    height: auto !important;
+    left: 0;
+    top: 0
+}
+
+.pswp__error-msg {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: -8px;
+    color: #CCC
+}
+
+.pswp__error-msg a {
+    color: #CCC;
+    text-decoration: underline
+}
+
+.pswp__button {
+    width: 44px;
+    height: 44px;
+    position: relative;
+    background: none;
+    cursor: pointer;
+    overflow: visible;
+    -webkit-appearance: none;
+    display: block;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    float: right;
+    opacity: .75;
+    -webkit-transition: opacity .2s;
+    transition: opacity .2s;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+.pswp__button:focus,
+.pswp__button:hover {
+    opacity: 1
+}
+
+.pswp__button:active {
+    outline: none;
+    opacity: .9
+}
+
+.pswp__button::-moz-focus-inner {
+    padding: 0;
+    border: 0
+}
+
+.pswp__ui--over-close .pswp__button--close {
+    opacity: 1
+}
+
+.pswp__button,
+.pswp__button--arrow--left:before,
+.pswp__button--arrow--right:before {
+    background: url(https://biologhelp.pl/sites/all/libraries/photoswipe/dist/default-skin/default-skin.png) 0 0 no-repeat;
+    background-size: 264px 88px;
+    width: 44px;
+    height: 44px
+}
+
+@media(-webkit-min-device-pixel-ratio:1.1), (-webkit-min-device-pixel-ratio:1.09375), (min-resolution:105dpi), (min-resolution:1.1dppx) {
+
+    .pswp--svg .pswp__button,
+    .pswp--svg .pswp__button--arrow--left:before,
+    .pswp--svg .pswp__button--arrow--right:before {
+        background-image: url(https://biologhelp.pl/sites/all/libraries/photoswipe/dist/default-skin/default-skin.svg)
+    }
+
+    .pswp--svg .pswp__button--arrow--left,
+    .pswp--svg .pswp__button--arrow--right {
+        background: none
+    }
+}
+
+.pswp__button--close {
+    background-position: 0 -44px
+}
+
+.pswp__button--share {
+    background-position: -44px -44px
+}
+
+.pswp__button--fs {
+    display: none
+}
+
+.pswp--supports-fs .pswp__button--fs {
+    display: block
+}
+
+.pswp--fs .pswp__button--fs {
+    background-position: -44px 0
+}
+
+.pswp__button--zoom {
+    display: none;
+    background-position: -88px 0
+}
+
+.pswp--zoom-allowed .pswp__button--zoom {
+    display: block
+}
+
+.pswp--zoomed-in .pswp__button--zoom {
+    background-position: -132px 0
+}
+
+.pswp--touch .pswp__button--arrow--left,
+.pswp--touch .pswp__button--arrow--right {
+    visibility: hidden
+}
+
+.pswp__button--arrow--left,
+.pswp__button--arrow--right {
+    background: none;
+    top: 50%;
+    margin-top: -50px;
+    width: 70px;
+    height: 100px;
+    position: absolute
+}
+
+.pswp__button--arrow--left {
+    left: 0
+}
+
+.pswp__button--arrow--right {
+    right: 0
+}
+
+.pswp__button--arrow--left:before,
+.pswp__button--arrow--right:before {
+    content: '';
+    top: 35px;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 30px;
+    width: 32px;
+    position: absolute
+}
+
+.pswp__button--arrow--left:before {
+    left: 6px;
+    background-position: -138px -44px
+}
+
+.pswp__button--arrow--right:before {
+    right: 6px;
+    background-position: -94px -44px
+}
+
+.pswp__counter,
+.pswp__share-modal {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.pswp__share-modal {
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    position: absolute;
+    z-index: 1600;
+    opacity: 0;
+    -webkit-transition: opacity .25s ease-out;
+    transition: opacity .25s ease-out;
+    -webkit-backface-visibility: hidden;
+    will-change: opacity
+}
+
+.pswp__share-modal--hidden {
+    display: none
+}
+
+.pswp__share-tooltip {
+    z-index: 1620;
+    position: absolute;
+    background: #FFF;
+    top: 56px;
+    border-radius: 2px;
+    display: block;
+    width: auto;
+    right: 44px;
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+    -webkit-transition: -webkit-transform .25s;
+    transition: transform .25s;
+    -webkit-backface-visibility: hidden;
+    will-change: transform
+}
+
+.pswp__share-tooltip a {
+    display: block;
+    padding: 8px 12px;
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 18px
+}
+
+.pswp__share-tooltip a:hover {
+    text-decoration: none;
+    color: #000
+}
+
+.pswp__share-tooltip a:first-child {
+    border-radius: 2px 2px 0 0
+}
+
+.pswp__share-tooltip a:last-child {
+    border-radius: 0 0 2px 2px
+}
+
+.pswp__share-modal--fade-in {
+    opacity: 1
+}
+
+.pswp__share-modal--fade-in .pswp__share-tooltip {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0)
+}
+
+.pswp--touch .pswp__share-tooltip a {
+    padding: 16px 12px
+}
+
+a.pswp__share--facebook:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -12px;
+    right: 15px;
+    border: 6px solid transparent;
+    border-bottom-color: #FFF;
+    -webkit-pointer-events: none;
+    -moz-pointer-events: none;
+    pointer-events: none
+}
+
+a.pswp__share--facebook:hover {
+    background: #3e5c9a;
+    color: #FFF
+}
+
+a.pswp__share--facebook:hover:before {
+    border-bottom-color: #3e5c9a
+}
+
+a.pswp__share--twitter:hover {
+    background: #55acee;
+    color: #FFF
+}
+
+a.pswp__share--pinterest:hover {
+    background: #CCC;
+    color: #ce272d
+}
+
+a.pswp__share--download:hover {
+    background: #DDD
+}
+
+.pswp__counter {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 44px;
+    font-size: 13px;
+    line-height: 44px;
+    color: #FFF;
+    opacity: .75;
+    padding: 0 10px
+}
+
+.pswp__caption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 44px
+}
+
+.pswp__caption small {
+    font-size: 11px;
+    color: #BBB
+}
+
+.pswp__caption__center {
+    text-align: left;
+    max-width: 420px;
+    margin: 0 auto;
+    font-size: 13px;
+    padding: 10px;
+    line-height: 20px;
+    color: #CCC
+}
+
+.pswp__caption--empty {
+    display: none
+}
+
+.pswp__caption--fake {
+    visibility: hidden
+}
+
+.pswp__preloader {
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -22px;
+    opacity: 0;
+    -webkit-transition: opacity .25s ease-out;
+    transition: opacity .25s ease-out;
+    will-change: opacity;
+    direction: ltr
+}
+
+.pswp__preloader__icn {
+    width: 20px;
+    height: 20px;
+    margin: 12px
+}
+
+.pswp__preloader--active {
+    opacity: 1
+}
+
+.pswp__preloader--active .pswp__preloader__icn {
+    background: url(https://biologhelp.pl/sites/all/libraries/photoswipe/dist/default-skin/preloader.gif) 0 0 no-repeat
+}
+
+.pswp--css_animation .pswp__preloader--active {
+    opacity: 1
+}
+
+.pswp--css_animation .pswp__preloader--active .pswp__preloader__icn {
+    -webkit-animation: clockwise 500ms linear infinite;
+    animation: clockwise 500ms linear infinite
+}
+
+.pswp--css_animation .pswp__preloader--active .pswp__preloader__donut {
+    -webkit-animation: donut-rotate 1000ms cubic-bezier(0.4, 0, 0.22, 1) infinite;
+    animation: donut-rotate 1000ms cubic-bezier(0.4, 0, 0.22, 1) infinite
+}
+
+.pswp--css_animation .pswp__preloader__icn {
+    background: none;
+    opacity: .75;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    margin: 0
+}
+
+.pswp--css_animation .pswp__preloader__cut {
+    position: relative;
+    width: 7px;
+    height: 14px;
+    overflow: hidden
+}
+
+.pswp--css_animation .pswp__preloader__donut {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: none;
+    margin: 0
+}
+
+@media screen and (max-width:1024px) {
+    .pswp__preloader {
+        position: relative;
+        left: auto;
+        top: auto;
+        margin: 0;
+        float: right
+    }
+}
+
+@-webkit-keyframes clockwise {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes clockwise {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@-webkit-keyframes donut-rotate {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+
+    50% {
+        -webkit-transform: rotate(-140deg);
+        transform: rotate(-140deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+}
+
+@keyframes donut-rotate {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+
+    50% {
+        -webkit-transform: rotate(-140deg);
+        transform: rotate(-140deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+}
+
+.pswp__ui {
+    -webkit-font-smoothing: auto;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1550
+}
+
+.pswp__top-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 44px;
+    width: 100%
+}
+
+.pswp__caption,
+.pswp__top-bar,
+.pswp--has_mouse .pswp__button--arrow--left,
+.pswp--has_mouse .pswp__button--arrow--right {
+    -webkit-backface-visibility: hidden;
+    will-change: opacity;
+    -webkit-transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
+    transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1)
+}
+
+.pswp--has_mouse .pswp__button--arrow--left,
+.pswp--has_mouse .pswp__button--arrow--right {
+    visibility: visible
+}
+
+.pswp__top-bar,
+.pswp__caption {
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.pswp__ui--fit .pswp__top-bar,
+.pswp__ui--fit .pswp__caption {
+    background-color: rgba(0, 0, 0, 0.3)
+}
+
+.pswp__ui--idle .pswp__top-bar {
+    opacity: 0
+}
+
+.pswp__ui--idle .pswp__button--arrow--left,
+.pswp__ui--idle .pswp__button--arrow--right {
+    opacity: 0
+}
+
+.pswp__ui--hidden .pswp__top-bar,
+.pswp__ui--hidden .pswp__caption,
+.pswp__ui--hidden .pswp__button--arrow--left,
+.pswp__ui--hidden .pswp__button--arrow--right {
+    opacity: .001
+}
+
+.pswp__ui--one-slide .pswp__button--arrow--left,
+.pswp__ui--one-slide .pswp__button--arrow--right,
+.pswp__ui--one-slide .pswp__counter {
+    display: none
+}
+
+.pswp__element--disabled {
+    display: none !important
+}
+
+.pswp--minimal--dark .pswp__top-bar {
+    background: none
+}
+
+.agroup__tabs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex
+}
+
+.agroup__panel {
+    display: none
+}
+
+.agroup__panel--open.agroup__panel--loaded {
+    display: block
+}

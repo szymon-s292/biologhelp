@@ -1,0 +1,215 @@
+.l-page {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap
+}
+
+.l-page>* {
+    width: 100%;
+    min-width: 0
+}
+
+.l-page>.l-footer-spacer {
+    margin-top: auto
+}
+
+.l-constrained,
+.l-region--footer {
+    max-width: 700px;
+    margin: 0 auto
+}
+
+.l-constrained:after,
+.l-region--footer:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.l-main>.messages,
+.l-main>.tabs--primary {
+    width: 100%;
+    margin-bottom: 20px
+}
+
+.l-region--sidebar-first>.block:first-child,
+.l-region--sidebar-second>.block:first-child {
+    margin-top: 40px
+}
+
+.l-footer-wrapper {
+    margin-top: 40px
+}
+
+.l-region--footer {
+    padding: 20px
+}
+
+@media(min-width:1000px) {
+
+    .l-constrained,
+    .l-region--footer {
+        max-width: 1440px
+    }
+
+    .l-content {
+        padding-top: 20px
+    }
+
+    .l-footer-wrapper,
+    .l-nav-header>.l-constrained,
+    .l-nav-header>.l-region--footer,
+    .l-top-header>.l-constrained,
+    .l-top-header>.l-region--footer {
+        padding-left: 10px;
+        padding-right: 10px
+    }
+}
+
+@media(max-width:700px) {
+
+    .l-nav-header>.l-constrained,
+    .l-nav-header>.l-region--footer,
+    .l-top-header>.l-constrained,
+    .l-top-header>.l-region--footer {
+        padding-top: 0
+    }
+}
+
+.l-main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between
+}
+
+.l-content-wrapper {
+    min-width: 100px
+}
+
+.l-content-wrapper,
+.l-region--sidebar-first,
+.l-region--sidebar-second {
+    width: 100%
+}
+
+@media(min-width:1300px) {
+    .l-main {
+        margin-top: 40px
+    }
+
+    .l-constrained,
+    .l-region--footer {
+        width: calc(100% - 20px)
+    }
+
+    .messages,
+    .tabs--primary {
+        margin-left: 10px;
+        margin-right: 10px
+    }
+
+    .l-content-wrapper {
+        flex: 1
+    }
+
+    .l-content-wrapper,
+    .l-region--sidebar-first,
+    .l-region--sidebar-second {
+        width: auto;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+
+    .has-one-sidebar .l-region--sidebar-first,
+    .has-one-sidebar .l-region--sidebar-second {
+        min-width: 320px;
+        flex: 0 0 30%
+    }
+
+    .has-two-sidebars .l-region--sidebar-first,
+    .has-two-sidebars .l-region--sidebar-second {
+        min-width: 310px;
+        flex: 0 0 24%
+    }
+
+    .l-region--sidebar-first>.block:first-child,
+    .l-region--sidebar-second>.block:first-child {
+        margin-top: 0
+    }
+}
+
+@media(min-width:1000px) and (max-width:1300px) {
+    .l-main {
+        margin-top: 40px
+    }
+
+    .l-constrained,
+    .l-region--footer {
+        width: calc(100% - 20px)
+    }
+
+    .messages,
+    .tabs--primary {
+        margin-left: 10px;
+        margin-right: 10px
+    }
+
+    .l-content-wrapper {
+        flex: 1
+    }
+
+    .l-content-wrapper,
+    .l-region--sidebar-first,
+    .l-region--sidebar-second {
+        padding-left: 10px;
+        padding-right: 10px
+    }
+
+    .l-content-wrapper {
+        width: auto
+    }
+
+    .l-region--sidebar-second {
+        width: auto;
+        min-width: 320px;
+        flex: 0 0 32%
+    }
+
+    .has-one-sidebar .l-region--sidebar-first {
+        width: auto;
+        min-width: 320px;
+        flex: 0 0 32%
+    }
+
+    .l-region--sidebar-first>.block:first-child,
+    .l-region--sidebar-second>.block:first-child {
+        margin-top: 0
+    }
+
+    .page-matura .has-two-sidebars .l-region--sidebar-second,
+    .page-zadania-maturalne-chemia .has-two-sidebars .l-region--sidebar-second,
+    .section-testy .has-two-sidebars .l-region--sidebar-second {
+        min-width: auto;
+        width: 100%;
+        flex: 0 0 100%
+    }
+
+    .page-matura .has-two-sidebars .l-region--sidebar-second>.block:first-child,
+    .page-zadania-maturalne-chemia .has-two-sidebars .l-region--sidebar-second>.block:first-child,
+    .section-testy .has-two-sidebars .l-region--sidebar-second>.block:first-child {
+        margin-top: 40px
+    }
+
+    .page-matura .has-two-sidebars .l-region--sidebar-first,
+    .page-zadania-maturalne-chemia .has-two-sidebars .l-region--sidebar-first,
+    .section-testy .has-two-sidebars .l-region--sidebar-first {
+        min-width: 320px;
+        flex: 0 0 30%
+    }
+
+    .page-user-kokpit .l-region--sidebar-second {
+        min-width: auto;
+        width: 100%;
+        flex: 0 0 100%
+    }
+}
