@@ -6,31 +6,30 @@ export async function GET(request: NextRequest, { params }: { params: Promise<{s
     const slug = (await params).slug;
     const bhPath = slug.join('/');
     const bhUrl = `https://biologhelp.pl/${bhPath}`;
-
-    const headersToForward = ['user-agent', 'accept', 'accept-language'];
-    const forwardedHeaders: Record<string, string> = {};
-    headersToForward.forEach((header) => {
-      const value = request.headers.get(header);
-      if (value) forwardedHeaders[header] = value;
-    });
-
+    
+    const forwardedHeaders: Record<string, string> = {
+      'User-Agent': request.headers.get('user-agent') || '',
+      'Accept': request.headers.get('accept') || '*/*',
+    };
+    
     const bhResponse = await axios.get(bhUrl, {
       headers: forwardedHeaders,
       responseType: 'arraybuffer',
-      validateStatus: () => true,
+      validateStatus: () => true,  
     });
-
-    const responseHeaders: Record<string, string> = {};
-    if (bhResponse.headers['content-type']) {
-      responseHeaders['content-type'] = bhResponse.headers['content-type'];
-    }
-    responseHeaders['Access-Control-Allow-Origin'] = '*';
+    
+    const contentType = bhResponse.headers['content-type'] || 'application/octet-stream';
 
     return new NextResponse(bhResponse.data, {
       status: bhResponse.status,
-      headers: responseHeaders,
+      headers: {
+        'Content-Type': contentType,
+        'Cache-Control': 'no-store',
+      },
     });
   } catch (err) {
+    console.log(err)
     return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
   }
 }
+

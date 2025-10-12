@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3000/api'
+const API_URL = 'http://100.64.0.1:3000/api'
 
 function decodeAjaxHtmlString(raw) {
     if (raw.startsWith('"') && raw.endsWith('"')) {
@@ -28,8 +28,9 @@ const fetchTasks = async (url, categories) => {
     let raw = await response.text();
 
     const tempContainer = document.createElement("main");
-    tempContainer.innerHTML = decodeAjaxHtmlString(raw);
+    tempContainer.innerHTML = decodeAjaxHtmlString(raw)
 
+    tempContainer.querySelectorAll('script').forEach(el => el.remove());
     const viewContent = tempContainer.querySelector(".view-content");
     const tasks = Array.from(viewContent.children)
     if (viewContent) {
@@ -49,13 +50,13 @@ const fetchTasks = async (url, categories) => {
                 const answerBox = article.querySelector(".agroup");
                 answerBox.innerHTML = `
                         <div style="height: 3px; border-bottom: black solid 2px; margin-top: 16px; margin-bottom: 48px;"></div>
-                        <h2 style="">Odpowiedź</h2>
+                        <h2 style="" >Odpowiedź</h2>
                         <div class="agroup__panels">
                             <section id="ag-panel-node-${taskId}-group-answer" class="agroup__panel agroup__panel--group_answer agroup__panel--loaded agroup__panel--open">
                                 ${taskAnswer}
                             </section>
                         </div>
-                    `;
+                    `
 
                 const container = answerBox.querySelector(`#ag-panel-node-${taskId}-group-answer`).children[0].children;
 
@@ -95,7 +96,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     let total = 0
 
-    for(let i = 0; i < 9; i++) {
+    for(let i = 0; i < 999; i++) {
         let url = `${baseUrl}?page=${i}`
         const tasksCount = await fetchTasks(url, categories)
         total += tasksCount
