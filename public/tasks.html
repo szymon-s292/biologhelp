@@ -6,20 +6,15 @@
     <title>Document</title>
     <script src="https://printjs-4de6.kxcdn.com/print.min.js"></script>
     <link rel="stylesheet" href="https://printjs-4de6.kxcdn.com/print.min.css">
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self'">
-
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://printjs-4de6.kxcdn.com">
 </head>
 <body>
     <div id="stats">
       <p id="counter"></p>
-      <button id="print" onclick="saveAsPDF()">Pobierz PDF</button>
+      <button id="print">Pobierz PDF</button> 
     </div>
     <div id="tasks"></div>
+
     <script src="main.js"></script>
-    <script>
-    function saveAsPDF() {
-      printJS({printable: 'tasks', type: 'html', css: ['/style-0.css', '/style-1.css', '/style-2.css', '/style-3.css', '/style-4.css', '/task-print-style.css']})
-    }
-  </script>
 </body>
 </html>

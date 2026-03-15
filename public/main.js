@@ -1,4 +1,19 @@
-const API_URL = 'http://100.64.0.1:3000/api'
+function saveAsPDF() {
+    printJS({
+      printable: 'tasks', 
+      type: 'html', 
+      css: [
+        '/style-0.css', '/style-1.css', '/style-2.css', 
+        '/style-3.css', '/style-4.css', '/task-print-style.css'
+      ]
+    });
+}
+const printBtn = document.getElementById('print');
+if (printBtn) {
+    printBtn.addEventListener('click', saveAsPDF);
+}
+
+const API_URL = 'https://biologhelp.i.vpn.olszyna.cloud/api'
 
 function decodeAjaxHtmlString(raw) {
     if (raw.startsWith('"') && raw.endsWith('"')) {
